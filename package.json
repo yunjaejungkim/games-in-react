@@ -7,14 +7,10 @@
     "gh-pages": "^2.0.1",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
-<<<<<<< HEAD
     "react-loadable": "^5.5.0",
     "react-router-dom": "^4.3.1",
-    "react-scripts": "2.0.4"
-=======
     "react-scripts": "2.0.4",
     "redux": "^4.0.0"
->>>>>>> d1591bcb9bebb0469148f0aa03eaff625439235a
   },
   "scripts": {
     "predeploy": "npm run build",
