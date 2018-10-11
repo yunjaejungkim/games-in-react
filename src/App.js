@@ -1,16 +1,27 @@
-import React, { Component } from 'react';
+import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Loadable from 'react-loadable';
 import './App.css';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          Games in React
-        </header>
-      </div>
-    );
-  }
-}
+const Loading = () => <div>Loading...</div>;
+
+const Home = Loadable({
+  loader: () => import('./routes/Home'),
+  loading: Loading,
+});
+
+const Hello = Loadable({
+  loader: () => import('./routes/games/Hello'),
+  loading: Loading,
+});
+
+const App = () => (
+  <Router>
+    <Switch>
+      <Route exact path="/" component={Home}/>
+      <Route path="/hello" component={Hello}/>
+    </Switch>
+  </Router>
+)
 
 export default App;
