@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 import Loadable from 'react-loadable';
 import './App.css';
 
@@ -18,8 +18,8 @@ const Hello = Loadable({
 const App = () => (
   <Router>
     <Switch>
-      <Route exact path="/games-in-react" component={Home}/>
-      <Route path="/games-in-react/hello" component={Hello}/>
+      <Route exact path="/" component={Home}/>
+      <Route path="/hello" component={Hello}/>
     </Switch>
   </Router>
 )
