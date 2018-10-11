@@ -1,7 +1,7 @@
 {
-  "main.css": "/games-in-react/static/css/main.e80142b1.chunk.css",
-  "main.js": "/games-in-react/static/js/main.8dc46444.chunk.js",
-  "main.js.map": "/games-in-react/static/js/main.8dc46444.chunk.js.map",
+  "main.css": "/games-in-react/static/css/main.86817007.chunk.css",
+  "main.js": "/games-in-react/static/js/main.4f39251b.chunk.js",
+  "main.js.map": "/games-in-react/static/js/main.4f39251b.chunk.js.map",
   "static/css/1.19c5e903.chunk.css": "/games-in-react/static/css/1.19c5e903.chunk.css",
   "static/js/1.28d59797.chunk.js": "/games-in-react/static/js/1.28d59797.chunk.js",
   "static/js/1.28d59797.chunk.js.map": "/games-in-react/static/js/1.28d59797.chunk.js.map",
@@ -11,9 +11,9 @@
   "static/js/3.9cf91653.chunk.js.map": "/games-in-react/static/js/3.9cf91653.chunk.js.map",
   "runtime~main.js": "/games-in-react/static/js/runtime~main.7cbfa243.js",
   "runtime~main.js.map": "/games-in-react/static/js/runtime~main.7cbfa243.js.map",
-  "static/css/main.e80142b1.chunk.css.map": "/games-in-react/static/css/main.e80142b1.chunk.css.map",
   "static/css/1.19c5e903.chunk.css.map": "/games-in-react/static/css/1.19c5e903.chunk.css.map",
+  "static/css/main.86817007.chunk.css.map": "/games-in-react/static/css/main.86817007.chunk.css.map",
   "index.html": "/games-in-react/index.html",
-  "precache-manifest.dc4c38b89fed5ec19eb82aaea3d8bcd2.js": "/games-in-react/precache-manifest.dc4c38b89fed5ec19eb82aaea3d8bcd2.js",
+  "precache-manifest.b5d72c62c7bf14e793eaac4db473bde2.js": "/games-in-react/precache-manifest.b5d72c62c7bf14e793eaac4db473bde2.js",
   "service-worker.js": "/games-in-react/service-worker.js"
 }
