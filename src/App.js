@@ -1,6 +1,8 @@
 import React from 'react';
-import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 import Loadable from 'react-loadable';
+import { Provider } from 'react-redux';
+import { HashRouter as Router, Route, Switch } from 'react-router-dom';
+import store from './redux/store';
 import './App.css';
 
 const Loading = () => <div>Loading...</div>;
@@ -11,7 +13,7 @@ const Home = Loadable({
 });
 
 const Hello = Loadable({
-  loader: () => import('./routes/games/Hello'),
+  loader: () => import('./routes/games/HelloContainer'),
   loading: Loading,
 });
 
@@ -19,7 +21,9 @@ const App = () => (
   <Router>
     <Switch>
       <Route exact path="/" component={Home}/>
-      <Route path="/hello" component={Hello}/>
+      <Provider store={store}>
+        <Route path="/hello" component={Hello}/>
+      </Provider>
     </Switch>
   </Router>
 )
