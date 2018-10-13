@@ -2,7 +2,6 @@
     text-align: center;
 }
 .home-header {
-    background-color: #282c34;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -12,11 +11,13 @@
     color: white;
 }
 .home .game-link {
+    margin-top: 1rem;
     text-decoration: none;
     color: white;
     border-radius: 3px;
     background-color: rgb(60, 66, 78);
-    padding: 2px 4px 2px 4px;
+    padding: 2px 8px 2px 8px;
+    font-size: calc(8px + 2vmin);
 }
 .home .game-link:hover {
     background-color: rgb(80, 88, 104);
