@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Home.css';
 
-const Home = ({ match }) => (
+const Home = () => (
     <div className="home">
         <header className="home-header">
         Games in React
