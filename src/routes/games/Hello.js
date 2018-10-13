@@ -1,10 +1,10 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import HomeButton from '../../components/HomeButton';
 import './Hello.css';
 
 const Hello = ({ name, updateName }) => (
     <div id="hello">
-        <div class="home"><Link to ="/">Home</Link></div>
+        <HomeButton />
         <h2>Hello{name ? `, ${name}!` : ''}</h2>
         <label htmlFor="username">Username: </label>
         <input type="text" name="username" autoComplete="off" onChange={(event) => { updateName(event.target.value); }} />
