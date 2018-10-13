@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import { updateName } from '../../redux/action';
+import { updateName as updateNameAction } from '../../redux/hello/actions';
 import Hello from './Hello';
 
 const mapStateToProps = state => ({
@@ -7,7 +7,7 @@ const mapStateToProps = state => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-    updateName: name => dispatch(updateName(name))
+    updateName: name => dispatch(updateNameAction(name))
 });
 
 const HelloContainer = connect(

@@ -2,7 +2,7 @@ import React from 'react';
 import Loadable from 'react-loadable';
 import { Provider } from 'react-redux';
 import { HashRouter as Router, Route, Switch } from 'react-router-dom';
-import store from './redux/store';
+import HelloStore from './redux/hello/store';
 import './App.css';
 
 const Loading = () => <div>Loading...</div>;
@@ -21,7 +21,7 @@ const App = () => (
   <Router>
     <Switch>
       <Route exact path="/" component={Home}/>
-      <Provider store={store}>
+      <Provider store={HelloStore}>
         <Route path="/hello" component={Hello}/>
       </Provider>
     </Switch>

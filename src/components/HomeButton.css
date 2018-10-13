@@ -1,0 +1,15 @@
+div.home-btn {
+    position: fixed;
+    top: 0.5rem;
+    left: 0.5rem;
+    border-radius: 3px;
+    background-color: rgb(60, 66, 78);
+    padding: 2px 8px 2px 8px;
+}
+div.home-btn:hover {
+    background-color: rgb(80, 88, 104);
+}
+div.home-btn>a {
+    text-decoration: none;
+    color: white;
+}
