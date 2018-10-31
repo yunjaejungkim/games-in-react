@@ -1,6 +1,6 @@
 import React from 'react';
-import HomeButton from '../../components/HomeButton';
-import './Hello.css';
+import HomeButton from '../common/HomeButton';
+import './styles.css';
 
 const Hello = ({ name, updateName }) => (
     <div id="hello">
