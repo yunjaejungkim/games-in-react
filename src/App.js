@@ -2,30 +2,36 @@ import React from 'react';
 import Loadable from 'react-loadable';
 import { Provider } from 'react-redux';
 import { HashRouter as Router, Route, Switch } from 'react-router-dom';
-import HelloStore from './redux/hello/store';
+import Store from './store';
 import './App.css';
 
 const Loading = () => <div>Loading...</div>;
 
 const Home = Loadable({
-  loader: () => import('./routes/Home'),
-  loading: Loading,
+    loader: () => import('./home/main'),
+    loading: Loading,
 });
 
 const Hello = Loadable({
-  loader: () => import('./routes/games/HelloContainer'),
-  loading: Loading,
+    loader: () => import('./hello/main'),
+    loading: Loading,
+});
+
+const Arithmetic = Loadable({
+    loader: () => import('./arithmetic/main'),
+    loading: Loading,
 });
 
 const App = () => (
-  <Router>
-    <Switch>
-      <Route exact path="/" component={Home}/>
-      <Provider store={HelloStore}>
-        <Route path="/hello" component={Hello}/>
-      </Provider>
-    </Switch>
-  </Router>
-)
+    <Provider store={Store}>
+        <Router>
+            <Switch>
+                <Route exact path="/" component={Home}/>
+                <Route path="/hello" component={Hello}/>
+                <Route path="/arithmetic" component={Arithmetic}/>
+            </Switch>
+        </Router>
+    </Provider>
+);
 
 export default App;

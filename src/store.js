@@ -1,5 +1,5 @@
 import { createStore } from 'redux';
-import { updateName } from './reducers';
+import { updateName } from './hello/reducers';
 
 const HelloStore = createStore(
     updateName,

@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
-import { updateName as updateNameAction } from '../../redux/hello/actions';
-import Hello from './Hello';
+import { updateName as updateNameAction } from './actions';
+import Hello from './view';
 
 const mapStateToProps = state => ({
     name: state
