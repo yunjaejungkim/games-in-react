@@ -7,7 +7,7 @@ const Home = () => (
         <header className="home-header">
         Games in React
         <Link className="game-link" to ="/hello">Hello</Link>
-            <Link className="game-link" to ="/arithmetic">Arithmetic</Link>
+        <Link className="game-link" to ="/arithmetic">Arithmetic</Link>
         </header>
     </div>
 );
